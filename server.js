@@ -32,7 +32,7 @@ app.put('/image', image.handleImage(db))
 
 
 const PORT = process.env.PORT
-app.listen(PORT, ()=>{
+app.listen(PORT || 3000, ()=>{
 	console.log(`app is running on port ${PORT}`);
 })
 
